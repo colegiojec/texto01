@@ -1,0 +1,8 @@
+{
+  "name": "Remix Fichas de Comprensión Lectora - 2.° Secundaria Rural",
+  "description": "Cuaderno interactivo y didáctico de comprensión lectora en formato A4 para 2.° de secundaria del ámbito rural peruano, con lecturas contextualizadas, actividades literales, inferenciales, críticas, sopa de letras y conectores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

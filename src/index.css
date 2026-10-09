@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Print styling specifically designed for A4 portrait standard */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm 10mm 10mm;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+
+  /* Hide navigation, buttons, controls during print */
+  nav,
+  aside,
+  header.no-print,
+  button:not(.print-include),
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force clean page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Borders crisp in black */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Notebook styling elements */
+.notebook-pattern {
+  background-color: #fafaf9;
+  background-image: 
+    linear-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 100% 28px;
+}
